@@ -249,6 +249,14 @@ display: flex;
         margin: auto;
     
 }
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-mob-2x.jpg);
+    }
+}
 .hero-title {
     font-weight: 700;
     /* font-size: 56px;
@@ -966,6 +974,14 @@ input::placeholder {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office-tab.jpg);
     }
+        @media screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/people-office-tab-2x.jpg);
+            }
+        }
         .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -1071,9 +1087,10 @@ text-align:start;
 .footer-form {
     display: flex;
     gap: 24px;
+    
 }
 .footer-container-form {
-   
+
 }
 
 }
@@ -1112,6 +1129,14 @@ text-align:start;
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+    }
 }
         /* features */
         .features {
@@ -1164,9 +1189,28 @@ flex-wrap: nowrap;
         }
 
         /* footer */
+    .page-footer {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+    .footer-container {
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: unset;
+    }
 
+        .logo-container {
+        margin-right: 120px;
+        }
+    .footer-logo {
+        display: inline-block;
+    }
+    .footer-social {
+    margin-right: 80px;
+    }
+        .footer-container-form {
+        margin-right: auto;
+        }
  
 
 }
