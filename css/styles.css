@@ -1079,7 +1079,8 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    
+    justify-content: flex-start;
+    padding-left: 108px;
 }
 .social-media, .label-text, .footer-logo {
 text-align:start;
