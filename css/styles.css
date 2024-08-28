@@ -351,6 +351,7 @@ display: flex;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .features-item-text {
@@ -1000,6 +1001,13 @@ input::placeholder {
 .features-item {
     width: calc((100% - 24px) / 2);
     }
+    .features-subtitle {
+        font-weight: 500;
+            font-size: 20px;
+    }
+    .features-item-text {
+        font-weight: 400;
+    }
 
         /* Team */
 
@@ -1080,6 +1088,7 @@ input::placeholder {
     flex-wrap: wrap;
     gap: 72px 24px;
     justify-content: flex-start;
+    align-items: baseline;
     padding-left: 108px;
 }
 .social-media, .label-text, .footer-logo {
@@ -1110,6 +1119,7 @@ text-align:start;
             margin-right: 76px;
         }
                 .contacts-link {
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 1.5;
                     letter-spacing: 0.02em;
@@ -1117,6 +1127,7 @@ text-align:start;
                 }
     .contacts-list {
         flex-direction: row;
+        gap: 40px;
     }
 
     /* mobile-menu */
@@ -1130,6 +1141,10 @@ text-align:start;
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
+    padding-top: 188px;
+        padding-bottom: 188px;
+
+
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 2dppx),
@@ -1170,6 +1185,7 @@ text-align:start;
 .team-list {
 flex-wrap: nowrap;
     gap: 24px; 
+    padding: 0;
 }
 .team-item {
     width: calc((100% - 72px) / 4);
